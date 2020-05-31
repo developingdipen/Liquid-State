@@ -7,6 +7,7 @@ html, body {
  padding:0;
  margin:0;
  scroll-behavior: smooth;
+ color: white;
 }
 
 /*Global Styles Start*/
@@ -14,102 +15,164 @@ html, body {
     --primary-color:rgb(255, 38, 0);
     font-family: 'Raleway', Helvetica, sans-serif;
 }
-
-.divider{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    content: '';
-    display: block;
-    height: 6.5em;
-    position: relative;
-    width: 100%;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
+.fa-angle-right{
+    padding: 4px 10px ;
+    border: solid 2px gray;
+    border-radius: 50%;
+    font-size: 20px !important;
 }
+/*Global Styles End*/
+
 
 /* Navbar Starts */
 
 /* Navbar Ends  */
 
+
 /* Header Starts */
 .header-text{
     padding: 15vh 6vh;
+    margin: 0 auto;
     color: white;
     
     background-image: linear-gradient(
-        rgba(74, 76, 83, 0.836),
-        rgba(74, 76, 83, 0.712)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+        rgba(0, 76, 76, 0.836),
+        rgba(0, 76, 76, 0.836)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-attachment: fixed;
     background-position: center top 10%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     height: 80vh;
 }
+
 .fa-tint{
     padding: 10px 15px 6px 15px;
     border: solid 2px gray;
     border-radius: 50%;
 }
 .header-text h1{
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.5em;
 }
 .header-text h2{
     font-size: 1em;
-    font-weight: 100;
+    font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.5em;
 }
 /* Header Ends */
 
+
 /* Content Wedge Starts */
-.content-wedge{
-    color: white;
-    background-color: rgb(65, 84, 143);
+
+.wedge1,
+.wedge3{
+    text-align: right;
+    background-color: rgb(0, 128, 128);
 }
-.content-image{
+.wedge2 {
+    text-align: left;
+    background-color: rgb(0, 102, 102);
+}
+
+.wedge-content{
+    padding: 5% 5%;
+}
+
+.wedge-image{
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-.content-wedge h1{
+.wedges h4{
    text-transform: uppercase;
+   font-weight: bold;
    border-bottom: 2px solid gray;
-    
+   padding-bottom: 1em;    
 }
-
+.wedges i{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* Content Wedge Ends */
+
 
 /* Articles Start */
 .articles{
-    color: white;
-    background-color: rgb(37, 53, 100);
+    background-color: rgb(19, 69, 110);
 }
 
-.article-header h1{
+.article-header{
+    padding: 10% 10%;
+}
+
+.article-header h2{
     text-transform: uppercase;
     border-bottom: 2px solid gray;
-     
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    font-size: 1em;   
  }
 
  .article{
-    height: 75vh; 
+    height: 70vh; 
     margin: 10% 10%;
     border-radius: .3em;
-    background-color: rgb(60, 68, 94);
+    background-color: rgb(25, 79, 122);
 }
 
 .article-image{
     width: 100%;
     height: 30vh;
+    border-radius: .3em .3em 0 0;
 }
+
+.article-text{
+    padding: 3% 10%;
+    font-size: .8em;
+    line-height: 2em;
+}
+
 .article h4{
     text-transform: uppercase;
     border-bottom: 2px solid gray;
-    margin: 0% 8%;
-    padding: 5% 0%;
-     
- }
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    font-weight: bold;    
+}
+
+.article-text p{
+    margin-top: 5px;
+}
+.article i{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.more-articles{
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(25, 79, 122);
+    border: 2px solid gray;
+    border-radius: .3em;
+    margin-bottom: 1em;
+    padding: 2em auto;
+    
+}
 /* Articles End */
+
+
+/* Contact Starts */
+.contact{
+    background-color: rgb(15, 52, 82);
+}
+/* Contact Ends */
+
+
+/* Footer Starts */
+
+/* Footer Ends */
