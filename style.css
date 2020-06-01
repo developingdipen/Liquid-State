@@ -16,10 +16,12 @@ html, body {
     font-family: 'Raleway', Helvetica, sans-serif;
 }
 .fa-angle-right{
-    padding: 4px 10px ;
+    padding: 4px 9px 5px 10px ;
     border: solid 2px gray;
     border-radius: 50%;
-    font-size: 20px !important;
+    font-size: 15px !important;
+    font-weight: bold;
+    cursor: pointer;
 }
 /*Global Styles End*/
 
@@ -84,8 +86,8 @@ html, body {
 }
 
 .wedge-image{
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
 }
 .wedges h4{
@@ -115,7 +117,9 @@ html, body {
     border-bottom: 2px solid gray;
     padding-bottom: 1em;
     margin-bottom: 0;
-    font-size: 1em;   
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
  }
 
  .article{
@@ -123,6 +127,10 @@ html, body {
     margin: 10% 10%;
     border-radius: .3em;
     background-color: rgb(25, 79, 122);
+}
+
+.article-header p{
+    line-height: 30px;
 }
 
 .article-image{
@@ -170,6 +178,8 @@ html, body {
 .contact{
     background-color: rgb(15, 52, 82);
 }
+
+
 /* Contact Ends */
 
 
