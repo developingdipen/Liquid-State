@@ -11,7 +11,13 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Generic</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
     </nav>
 
     <header>
@@ -29,13 +35,15 @@
 
     <section>
         <div class="wedges wedge1">
-            <div class="wedge-content">
-                <img src="https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image">
-                <h4>Magna Arcu Feugiat</h4>
-                <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                <div class="content-buttons" id="content-buttons">
-                    <i><i class="fa fa-angle-right" aria-hidden="true"></i>Learn More</i>
-                    <i></i>
+            <div class="wedge-content flex-parent">
+                <img src="https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image flex-child">
+                <div class="wedge-text flex-child">
+                    <h4>Magna Arcu Feugiat</h4>
+                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+                    <div class="content-buttons" id="content-buttons">
+                        <i><i class="fa fa-angle-right" aria-hidden="true"></i>Learn More</i>
+                        <i></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,13 +51,15 @@
         <div class="divider" id="divder"></div>
 
         <div class="wedges wedge2">
-            <div class="wedge-content">
-                <img src="https://images.pexels.com/photos/698848/pexels-photo-698848.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image">
-                <h4>Tempus Adipiscing</h4>
-                <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                <div class="content-buttons" id="content-buttons">
-                    <i><i class="fa fa-angle-right" aria-hidden="true"></i>Learn More</i>
-                    <i></i>
+            <div class="wedge-content flex-parent">
+                <img src="https://images.pexels.com/photos/698848/pexels-photo-698848.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image flex-child">
+                <div class="wedge-text flex-child">
+                    <h4>Tempus Adipiscing</h4>
+                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+                    <div class="content-buttons" id="content-buttons">
+                        <i><i class="fa fa-angle-right" aria-hidden="true"></i>Learn More</i>
+                        <i></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,13 +67,15 @@
         <div class="divider" id="divder"></div>
 
         <div class="wedges wedge3">
-            <div class="wedge-content">
-                <img src="https://images.pexels.com/photos/2230444/pexels-photo-2230444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image">
-                <h4>Nullam Dignissim</h4>
-                <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                <div class="content-buttons" id="content-buttons">
-                    <i><i class="fa fa-angle-right" aria-hidden="true"></i>Learn More</i>
-                    <i></i>
+            <div class="wedge-content flex-parent">
+                <img src="https://images.pexels.com/photos/2230444/pexels-photo-2230444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image flex-child">
+                <div class="wedge-text flex-child">
+                    <h4>Nullam Dignissim</h4>
+                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+                    <div class="content-buttons" id="content-buttons">
+                        <i><i class="fa fa-angle-right" aria-hidden="true"></i>Learn More</i>
+                        <i></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,7 +131,6 @@
                 </div> 
             </div>
         
-
             <div class="article flex-child" id="article">
                 <img src="https://images.pexels.com/photos/1155577/pexels-photo-1155577.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="article-image">
 
@@ -146,40 +157,46 @@
                 <h1>Get In Touch</h1>
                 <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
             </div>
-            <form class="contact-form">
-                <div class="contact-form-elements">
-                    <div class="form-element">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+            <div class="flex-parent">
+                <form class="contact-form flex-child">
+                    <div class="contact-form-elements">
+                        <div class="form-element">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-element">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-element">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
                     </div>
-                    <div class="form-element">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-element">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
-                    </div>
-                </div>
-            </form>
+                </form>
+        
+                <ul class="contact-list flex-child">
+                    <li><a href="#" class="fa fa-home"></a>Untitled Inc<br>1234 Somewhere Road Suite #2894<br>Nashville, TN 00000-0000</li>
+                    <li><a href="#" class="fa fa-phone"></a>(000) 000-0000</li>
+                    <li><a href="#" class="fa fa-envelope"></a>information@untitled.tld</li>
+                    <li><a href="#" class="fa fa-twitter"></a>twitter.com/untitled-tld</li>
+                    <li><a href="#" class="fa fa-facebook"></a>facebook.com/untitled-tld</li>
+                    <li><a href="#" class=" fa fa-instagram"></a>instagram.com/untitled-tld</li>
+                </ul>
+            </div>
         </div>
-        <ul class="contact">
-            <li><a href="#" class="fa fa-home">Untitled Inc<br>
-                1234 Somewhere Road Suite #2894<br>
-                Nashville, TN 00000-0000</a></li>
-            <li><a href="#" class="fa fa-phone">(000) 000-0000</a></li>
-            <li><a href="#" class="fa fa-envelope">information@untitled.tld</a></li>
-            <li><a href="#" class="fa fa-twitter">twitter.com/untitled-tld</a></li>
-            <li><a href="#" class="fa fa-facebook">facebook.com/untitled-tld</a></li>
-            <li><a href="#" class=" fa fa-instagram">instagram.com/untitled-tld</a></li>
-        </ul>
     </section>
 
-    <footer>
-        <ul class="copyright">
-            <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </footer>
+    <section class="footer">
+        <footer>
+            <p>&copy; 2020 All Rights Reserved</p>
+            <p>Made with
+                <i class="fa fa-coffee"></i>
+                <i class="fa fa-heart-o"></i> 
+                <i class="fa fa-magic"></i>  
+                by <a href="https://developingdipen.com/" target="_blank" rel="noreferrer" aria-label="Website Developer's Link">Developing Dipen</a></p>
+        </footer>
+    </section>
    
 
 </body>
