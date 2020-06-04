@@ -10,7 +10,13 @@ html, body {
  color: white;
 }
 
+* {
+    margin:0;
+    padding: 0;
+}
+
 /*Global Styles Start*/
+
 :root {
     --primary-color:rgb(255, 38, 0);
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -20,13 +26,23 @@ html, body {
 
 .fa-angle-right{
     padding: 4px 9px 5px 10px ;
+    margin-right: 10px;
     border: solid 2px gray;
     border-radius: 50%;
     font-size: 15px !important;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
 }
 
+.learn-more-button{
+    padding: 20px 0px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 /*Global Styles End*/
 
 
@@ -53,14 +69,12 @@ html, body {
 
 .fa-tint{
     padding: 10px 15px 6px 15px;
+    margin-bottom: 15px;
     border: solid 2px gray;
     border-radius: 50%;
 }
 
 .header{
-    padding: 15vh 6vh;
-    margin: 0 auto;
-    color: white;
     
     background-image: linear-gradient(
         rgba(0, 76, 76, 0.836),
@@ -74,7 +88,8 @@ html, body {
 }
 .header-text{
     text-align: left;
-    position: relative;
+    padding: 80px 32px 68px;
+    position: relative ;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -87,10 +102,12 @@ html, body {
     text-transform: uppercase;
     line-height: 1.5em;
     letter-spacing: 2px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: solid 2px gray;
 }
 .header-text h2{
-    font-size: 1em;
+    font-size: .8em;
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -112,7 +129,7 @@ html, body {
 }
 
 .wedge-content{
-    padding: 5% 5%;
+    padding: 2em 1.5em;
 }
 
 .wedge-image{
@@ -130,6 +147,7 @@ html, body {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 /* Content Wedge Ends */
 
 
@@ -140,7 +158,7 @@ html, body {
 }
 
 .article-header{
-    padding: 10% 10%;
+    padding: 2em 1.5em;
 }
 
 .article-header h2{
@@ -160,7 +178,7 @@ html, body {
 
 .article{
     height: 450px; 
-    margin: 10% 10%;
+    margin: 2em 1.5em;
     border-radius: 5px;
     background-color: rgb(25, 79, 122);
 }
@@ -169,7 +187,7 @@ html, body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .article-text{
@@ -194,15 +212,16 @@ html, body {
     font-weight: bold;
 }
 
-.more-articles{
+.more-articles-button{
     color: white;
     text-transform: uppercase;
     background-color: rgb(25, 79, 122);
+    padding: 15px 0px;
+    margin: .5em 1.5em 1.5em 1.5em; 
+    width: 100%;
     border: 2px solid gray;
     border-radius: .3em;
-    margin-bottom: 1em;
-    padding: 2em auto;
-    
+  
 }
 /* Articles End */
 
@@ -263,13 +282,13 @@ input, textarea {
     list-style: none;
     text-decoration: none;
     color:white;
-    padding: 0px;
+
 }
 
 .contact-list a{
     text-decoration: none;
     color: white;
-    margin-right: 4em;
+    margin-right: 1.5em;
 }
 
 .contact li{
@@ -298,7 +317,7 @@ input, textarea {
     align-items: flex-start;
     text-align: center;
     color: gray;
-    padding: 3em 0em;
+    padding: 4em 0em 2em 0em;
     border-top: 2px solid gray;
   }
 
@@ -339,6 +358,10 @@ input, textarea {
         width: calc(50% - 4em);
         height: 600px;
     }
+
+    .contact .fa {
+        font-size: 18px !important;
+    }
     
 }
 
@@ -367,8 +390,22 @@ input, textarea {
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        margin-right: 2em;
     }
+
+    .wedge1 .wedge-image{
+        order: 1;
+        margin-left: 4em;
+    } 
+    
+    .wedge2 .wedge-image{
+        margin-right: 4em;
+    } 
+
+    .wedge3 .wedge-image{
+        order: 1;
+        margin-left: 4em;
+    }
+
 
 /* Wedges End */
 
@@ -376,7 +413,7 @@ input, textarea {
         height: 350px;
     }
     .article-header{
-        padding: 0;
+        padding: 0px;
     }
 
 /* Article Ends */
