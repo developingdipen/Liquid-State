@@ -25,13 +25,22 @@ html, body {
 }
 
 .fa-angle-right{
-    padding: 4px 9px 5px 10px ;
     margin-right: 10px;
-    border: solid 2px gray;
-    border-radius: 50%;
     font-size: 15px !important;
     font-weight: bolder;
     cursor: pointer;
+}
+
+.angle-right-border{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding: 4px;
 }
 
 .learn-more-button{
@@ -48,6 +57,7 @@ html, body {
 .learn-more-button :hover{
     cursor: pointer;
 }
+
 /*Global Styles End*/
 
 
@@ -72,11 +82,15 @@ html, body {
 
 /* Header Starts */
 
-.fa-tint{
-    padding: 10px 15px 6px 15px;
-    margin-bottom: 15px;
-    border: solid 2px gray;
+.tint-border{
+    width: 52px;
+    height:52px;
+    border: 2px solid gray;
     border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    padding: 9px;
+    vertical-align: middle;
 }
 
 .header{
@@ -217,8 +231,8 @@ html, body {
     font-weight: bold;
 }
 
-/* .more-articles-button{
-    color: white;
+.more-articles-button{
+    /* color: white;
     text-transform: uppercase;
     background-color: rgb(25, 79, 122);
     padding: 5% 10%;
@@ -226,8 +240,10 @@ html, body {
     width: 100%;
     border: 2px solid gray;
     border-radius: .3em;
-    cursor: pointer;
-} */
+    cursor: pointer; */
+    
+}
+
 /* Articles End */
 
 
@@ -310,12 +326,20 @@ input, textarea {
 
 
 .contact-list .fa{
-    padding: 4px 9px 5px 10px ;
-    border: solid 2px gray;
-    border-radius: 50%;
     font-size: 15px !important;
     font-weight: bold;
     cursor: default;
+}
+
+.contact-fa-border{
+    width: 35px;
+    height: 35px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+
 }
 
 /* Contact Ends */
@@ -417,6 +441,17 @@ input, textarea {
         height: 660px;
         font-size: 2em;
     }
+    
+    .tint-border{
+        width: 80px;
+        height:80px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 80px;
+        padding: 7px;
+        vertical-align: middle; 
+    }
     .wedge-image{
         width: 300px;
         height: 300px;
@@ -500,3 +535,6 @@ input, textarea {
     }
     
 }
+
+
+
