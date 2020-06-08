@@ -59,12 +59,42 @@ html, body {
     cursor: pointer;
 }
 
+.divider{
+    height: 100px;
+}
+.divider1{
+    background-image: linear-gradient(
+        rgb(34, 92, 139),
+        rgb(23, 77, 121))
+}
+.divider2{
+    background-image: linear-gradient(
+        rgb(34, 92, 139),
+        rgb(23, 77, 121))
+}
+.divider3{
+    background-image: linear-gradient(
+        rgb(23, 77, 121),
+        rgb(19, 70, 112))
+}
+.divider4{
+    background-image: linear-gradient(
+        rgb(19, 70, 112),
+        rgb(19, 62, 97))
+}
+.divider5{
+    background-image: linear-gradient(
+        rgb(19, 62, 97),
+        rgb(23, 77, 121))
+}
+
 /*Global Styles End*/
 
 
 /* Navbar Starts */
 .navbar{
-    background-color:  rgba(0, 76, 76, 0.836);
+    background-color: rgba(43, 139, 218, 0.176);
+    position: fixed;
 }
 .links{
     display: flex;
@@ -99,8 +129,8 @@ html, body {
 .header{
     
     background-image: linear-gradient(
-        rgba(0, 76, 76, 0.836),
-        rgba(0, 76, 76, 0.836)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+        rgba(42, 139, 218, 0.795),
+        rgb(13, 41, 63)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-attachment: fixed;
     background-position: center top 10%;
     background-repeat: no-repeat;
@@ -140,14 +170,19 @@ html, body {
 
 /* Content Wedge Starts */
 
-.wedge1,
-.wedge3{
+.wedge1{
     text-align: right;
-    background-color: rgb(0, 128, 128);
+    background-color: rgb(34, 92, 139);
 }
+
 .wedge2 {
     text-align: left;
-    background-color: rgb(0, 102, 102);
+    background-color: rgb(23, 77, 121);
+}
+
+.wedge3{
+    text-align: right;
+    background-color: rgb(19, 70, 112);
 }
 
 .wedge-content{
@@ -176,7 +211,7 @@ html, body {
 /* Articles Start */
 
 .articles{
-    background-color: rgb(19, 69, 110);
+    background-color:  rgb(19, 62, 97);
 }
 
 .article-header{
@@ -237,10 +272,11 @@ html, body {
 .more-articles-button{
     color: white;
     text-transform: uppercase;
+    font-size: 1em;
     background-color: rgb(25, 79, 122);
     padding: 5% 0%;
     margin: .5em 1.5em 1.5em 1.5em; 
-    width: 100%;
+    width: calc(100% - 3em);
     border: 2px solid gray;
     border-radius: .3em;
     cursor: pointer;
@@ -254,8 +290,8 @@ html, body {
 
 .contact{
     background-image: linear-gradient(
-        rgba(25, 79, 122, 0.952),
-        rgb(25, 79, 122, 0.952)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+        rgba(13, 41, 63, 0.952),
+        rgba(13, 41, 63, 0.952)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-attachment: fixed;
     background-position: center top 10%;
     background-repeat: no-repeat;
@@ -285,7 +321,7 @@ input, textarea {
     border: solid 2px gray;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color:  rgba(25, 78, 122, 0.63);
+    background-color:  rgba(13, 41, 63, 0.952);
     font-family: 'Raleway', Helvetica, sans-serif;
     color: white;
 }
@@ -406,6 +442,7 @@ input, textarea {
         display: flex;
         justify-content: space-between;
     }
+
     .contact-form,
     .contact-list{
         width: 50%
@@ -457,6 +494,7 @@ input, textarea {
         padding: 7px;
         vertical-align: middle; 
     }
+    
     .wedge-image{
         width: 300px;
         height: 300px;
@@ -484,18 +522,19 @@ input, textarea {
     }
     
     .article {
-        width: calc(50% - 3em);
+        width: calc(50% - 0em);
     }
 
     .article1,
     .article3{
-        margin: 1em 1em 1em 1.5em;
+        margin: 1em 0em 1em 0em;
     }
 
     .article2,
     .article4{
-        margin: 1em 1.5em 1em 1em;
+        margin: 1em 0em 1em 0em;
     }
+    
 /* Article Ends */
 
     .message-button{
@@ -516,10 +555,10 @@ input, textarea {
 }
 
 
-@media (min-width: 481px) {
+@media (min-width: 481px){
 
     .article {
-        width: calc(50% - 3em);
+        width: calc(50% - 2.5em);
     }
 
     .article1,
@@ -538,5 +577,7 @@ input, textarea {
         align-content: center;
         height: 100%;
     }
-    
+    .more-articles-button{
+        width: 100%;   
+    }
 }
