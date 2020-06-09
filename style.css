@@ -96,6 +96,7 @@ html, body {
     background-color: rgba(43, 139, 218, 0.176);
     position: fixed;
 }
+
 .links{
     display: flex;
     justify-items: flex-end;
@@ -127,7 +128,6 @@ html, body {
 }
 
 .header{
-    
     background-image: linear-gradient(
         rgba(42, 139, 218, 0.795),
         rgb(13, 41, 63)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
@@ -193,7 +193,9 @@ html, body {
     width: 190px;
     height: 190px;
     border-radius: 50%;
+    margin: 1em 0em;
 }
+
 .wedges h4{
    text-transform: uppercase;
    font-weight: bold;
@@ -280,7 +282,6 @@ html, body {
     border: 2px solid gray;
     border-radius: .3em;
     cursor: pointer;
-    
 }
 
 /* Articles End */
@@ -337,17 +338,13 @@ input, textarea {
     border: 2px solid gray;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.contact-list{
-    margin-top: 3.5em;
+    margin-bottom: 3.5em;
 }
 
 .contact-list ul{
     list-style: none;
     text-decoration: none;
     color:white;
-
 }
 
 .contact-list a{
@@ -364,13 +361,11 @@ input, textarea {
     cursor: pointer;
 }
 
-
 .contact-list .fa{
     font-size: 15px !important;
     font-weight: bold;
     cursor: default;
 }
-
 
 .contact-fa-border{
     width: 35px;
@@ -380,7 +375,6 @@ input, textarea {
     text-align: center;
     vertical-align: middle;
     padding: 8px;
-
 }
 
 /* Contact Ends */
@@ -395,10 +389,6 @@ input, textarea {
     color: gray;
     padding: 4em 0em 2em 0em;
     border-top: 2px solid gray;
-  }
-
-  .footer {
-      line-height: 1;
   }
 
   .footer p a {
@@ -428,17 +418,18 @@ input, textarea {
         padding: 5% 25% 0% 25%;
     }
 
+/* Global Ends */
 
     .article {
         margin: 2em 2em;
         width: calc(50% - 4em);
         height: auto;
     }
-
+/* Article Ends */
     .contact .fa {
         font-size: 18px !important;
     }
-    .flex-parent{
+     .contact .flex-parent{
         display: flex;
         justify-content: space-between;
     }
@@ -461,10 +452,11 @@ input, textarea {
         padding-top: 1em;
     }
 
+/* Contact Ends */
+
 }
 
 @media (min-width: 769px) {
-    
 
     .header,
     .wedges,
@@ -476,7 +468,6 @@ input, textarea {
         padding: 5% 17% 0% 17%;
     }
 
-
 /* Global Ends */
 
     .header{
@@ -487,42 +478,18 @@ input, textarea {
     .tint-border{
         width: 80px;
         height:80px;
-        border: 2px solid gray;
-        border-radius: 50%;
-        text-align: center;
         line-height: 80px;
         padding: 7px;
-        vertical-align: middle; 
-    }
-    
-    .wedge-image{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
     }
 
-    .wedge1 .wedge-image{
-        order: 1;
-        margin-left: 4em;
-    } 
-    
-    .wedge2 .wedge-image{
-        margin-right: 4em;
-    } 
-
-    .wedge3 .wedge-image{
-        order: 1;
-        margin-left: 4em;
-    }
-
-/* Wedges End */
+/* Header Ends */
 
     .article-header{
         padding: 0px;
     }
     
     .article {
-        width: calc(50% - 0em);
+        width: calc(50% - 2em);
     }
 
     .article1,
@@ -538,24 +505,47 @@ input, textarea {
 /* Article Ends */
 
     .message-button{
-        font-family: 'Raleway', Helvetica, sans-serif;
-        font-size: 1em;
-        text-transform: uppercase;
-        color: white;
         width: auto;
-        background-color: transparent;
         padding: 3% 7%;
-        border: 2px solid gray;
         border-radius: 5px;
     }
-
-    
-/* contact ends */
+ 
+/* Contact ends */
 
 }
 
 
 @media (min-width: 481px){
+
+    .wedges .flex-parent{
+        display: flex;
+        align-items: center;
+    }
+
+    .wedge-image{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .wedge1 .wedge-image,
+    .wedge3 .wedge-image{
+        order: 1;
+        margin-left: 4em;
+    } 
+    
+    .wedge2 .wedge-image{
+        margin-right: 4em;
+    } 
+
+/* Wedges End */
+
+    .articles .flex-parent{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 100%;
+    }
 
     .article {
         width: calc(50% - 2.5em);
@@ -571,13 +561,10 @@ input, textarea {
         margin: 1em 1.5em 1em 1em;
     }
 
-    .articles .flex-parent{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        height: 100%;
-    }
     .more-articles-button{
         width: 100%;   
     }
+
+/* Articles End  */
+    
 }
