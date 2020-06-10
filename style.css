@@ -8,20 +8,34 @@ html, body {
  margin:0;
  scroll-behavior: smooth;
  color: white;
+ font-size: 62.5%;
 }
-
 * {
     margin:0;
     padding: 0;
 }
-
-/*Global Styles Start*/
-
 :root {
     font-family: 'Raleway', Helvetica, sans-serif;
-    line-height: 1.5em;
+    line-height: 2.4rem;
     letter-spacing: 1px;
 }
+
+/* /// Table of Contents /// */
+
+    /* 1. Global Styles */
+    /* 2. Narbar */
+    /* 3. Header */
+    /* 4. Content Wedge */
+    /* 5. Articles */
+    /* 6. Contact */
+    /* 7. Footer */
+    /* 8. Media Queries */
+
+
+/* /// Table of Contents Ends /// */
+
+
+/* Global Styles Start */
 
 .fa-angle-right{
     margin-right: 10px;
@@ -48,7 +62,7 @@ html, body {
     border: none;
     color: white;
     font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.6rem;
     font-weight: bolder;
     text-transform: uppercase;
     cursor: pointer;
@@ -149,21 +163,21 @@ html, body {
 }
 
 .header-text h1{
-    font-size: 1.5em;
-    font-weight: 900;
+    font-size: 2.4rem;
+    font-weight: bolder;
     text-transform: uppercase;
-    line-height: 1.5em;
+    line-height: 2,4rem;
     letter-spacing: 2px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: solid 2px gray;
 }
 .header-text h2{
-    font-size: .8em;
+    font-size: 1.28rem;
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 1.5em;
+    line-height: 2.4rem;
 }
 /* Header Ends */
 
@@ -186,26 +200,26 @@ html, body {
 }
 
 .wedge-content{
-    padding: 2em 1.5em;
+    padding: 3.2rem 2.4rem;
 }
 
 .wedge-image{
     width: 190px;
     height: 190px;
     border-radius: 50%;
-    margin: 1em 0em;
+    margin: 1.6rem 0rem;
 }
 
 .wedges h4{
    text-transform: uppercase;
-   font-weight: bold;
+   font-weight: bolder;
    border-bottom: 2px solid gray;
-   padding-bottom: 1em;
-   margin-bottom: 1em;    
+   padding-bottom: 1.6rem;
+   margin-bottom: 1.6em;    
 }
 .wedges i{
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /* Content Wedge Ends */
@@ -218,28 +232,28 @@ html, body {
 }
 
 .article-header{
-    padding: 2em 1.5em;
+    padding: 3.2rem 2.4rem;
 }
 
 .article-header h2{
     text-transform: uppercase;
     border-bottom: 2px solid gray;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    font-size: .9em;
-    font-weight: 600;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.44rem;
+    font-weight: lighter;
     letter-spacing: 1px;
 }
 
 .article-header p{
     line-height: 20px;
-    font-size: .8em;
+    font-size: 1.28rem;
 }
 
 .article{
     min-height: 500px;
     height: auto; 
-    margin: 2em 1.5em;
+    margin: 3.2rem 2.4rem;
     border-radius: 5px;
     background-color: rgb(25, 79, 122);
 }
@@ -253,15 +267,15 @@ html, body {
 
 .article-text{
     padding: 3% 10%;
-    font-size: .8em;
-    line-height: 2em;
+    font-size: 1.28rem;
+    line-height: 3.2rem;
 }
 
 .article h4{
     text-transform: uppercase;
     border-bottom: 2px solid gray;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
     margin-bottom: 0;
     font-weight: bold;    
 }
@@ -277,13 +291,13 @@ html, body {
 .more-articles-button{
     color: white;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.6rem;
     background-color: rgb(25, 79, 122);
     padding: 5% 0%;
-    margin: .5em 1.5em 1.5em 1.5em; 
-    width: calc(100% - 3em);
+    margin: .8rem 2.4rem 2.4rem 2.4rem; 
+    width: calc(100% - 4.8rem);
     border: 2px solid gray;
-    border-radius: .3em;
+    border-radius: .48rem;
     cursor: pointer;
 }
 
@@ -301,18 +315,18 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    padding: 1.5em 1.5em 0em 1.5em;
+    padding: 2.4em 2.4rem 0rem 2.4rem;
 }
 
 .contact-header{
-    margin-bottom: 3em;  
+    margin-bottom: 4.8rem;  
 }
 
 .contact-header h2{
     text-transform: uppercase;
     border-bottom: 2px solid gray;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 .form-element{
@@ -333,7 +347,7 @@ input, textarea {
 
 .message-button{
     font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: white;
     background-color: transparent;
@@ -342,7 +356,7 @@ input, textarea {
     border: 2px solid gray;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 3.5em;
+    margin-bottom: 5.6rem;
 }
 
 .contact-list ul{
@@ -354,12 +368,12 @@ input, textarea {
 .contact-list a{
     text-decoration: none;
     color: white;
-    margin-right: 1.5em;
+    margin-right: 2.4rem;
 }
 
 .contact li{
     font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: .9em;
+    font-size: 1.44rem;
     list-style: none;
     margin: 5px 0px 20px 0px;
     cursor: pointer;
@@ -391,7 +405,7 @@ input, textarea {
     align-items: flex-start;
     text-align: center;
     color: gray;
-    padding: 4em 0em 2em 0em;
+    padding: 6.4rem 0rem 3.2rem 0rem;
     border-top: 2px solid gray;
   }
 
@@ -427,11 +441,11 @@ input, textarea {
     .wedge1 .wedge-image,
     .wedge3 .wedge-image{
         order: 1;
-        margin-left: 4em;
+        margin-left: 6.4rem;
     } 
     
     .wedge2 .wedge-image{
-        margin-right: 4em;
+        margin-right: 6.4rem;
     } 
 
 /* Wedges End */
@@ -444,17 +458,17 @@ input, textarea {
     }
 
     .article {
-        width: calc(50% - 2.5em);
+        width: calc(50% - 4rem);
     }
 
     .article1,
     .article3{
-        margin: 1em 1em 1em 1.5em;
+        margin: 1.6rem 1.6rem 1.6rem 2.4rem;
     }
 
     .article2,
     .article4{
-        margin: 1em 1.5em 1em 1em;
+        margin: 1.6rem 2.4rem 1.6rem 1.6rem;
     }
 
     .more-articles-button{
@@ -482,26 +496,26 @@ input, textarea {
 
     .fa-angle-right{
         margin-right: 10px;
-        font-size: 1.5rem !important;
+        font-size: 2.4rem !important;
         font-weight: bolder;
     }
     
     .angle-right-border{
-        width: 2rem;
-        height: 2rem;
-        line-height: 2rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height: 3.2rem;
         padding: 1px 1px 1px 3px;
     }
     
     .learn-more-button{
-        font-size: 1.2rem;
+        font-size: 1.92rem;
     }
 
 /* Global Ends */
 
     .header{
         height: 660px;
-        font-size: 1.5em;
+        font-size: 2.4rem;
     }
     
     .tint-border{
@@ -514,7 +528,7 @@ input, textarea {
 /* Header Ends */
 
     .wedge-text h4{
-        font-size: 1.5em;
+        font-size: 2.4rem;
     }
     .article-header{
         padding: 0px;
@@ -523,25 +537,25 @@ input, textarea {
     .article h4,
     .article-header h2,
     .contact h2{
-        font-size: 1.5em
+        font-size: 2.4rem
     }
     .article {
-        width: calc(50% - 1em);
+        width: calc(50% - 1.6rem);
     }
 
     .article1,
     .article3{
-        margin: 1em 1em 1em 0em;
+        margin: 1.6rem 1.6rem 1.6rem 0rem;
     }
 
     .article2,
     .article4{
-        margin: 1em 0em 1em 1em;
+        margin: 1.6rem 0rem 1.6rem 1.6rem;
     }
 
     .more-articles-button{
         margin-left: 0;
-        font-size: 1em;
+        font-size: 1.6rem;
         width: 100%;
         padding: 9% 18%;
     }
@@ -583,18 +597,18 @@ input, textarea {
     }
 
     .article {
-        width: calc(50% - 2em);
+        width: calc(50% - 3.2rem);
         height: auto;
     }
 
     .article1,
     .article3{
-        margin: 2em 2em 2em 0em;
+        margin: 3.2rem 3.2rem 3.2rem 0rem;
     }
 
     .article2,
     .article4{
-        margin: 2em 0em 2em 2em;
+        margin: 3.2rem 0rem 3.2rem 3.2rem;
     }
 
 /* Article Ends */
@@ -613,7 +627,7 @@ input, textarea {
     }
 
     .contact-list{
-        margin-top: 0em;
+        margin-top: 0rem;
     }
     
     .contact ul{
@@ -622,7 +636,7 @@ input, textarea {
     
      .form-element,
     .contact li {
-        padding-top: 1em;
+        padding-top: 1.6rem;
     }
 
 /* Contact Ends */
@@ -648,18 +662,18 @@ input, textarea {
 
     .fa-angle-right{
         margin-right: 10px;
-        font-size: 1.3rem !important;
+        font-size: 2.08rem !important;
     }
     
     .angle-right-border{
-        width: 1.9rem;
-        height: 1.9rem;
-        line-height: 1.9rem;
+        width: 3.04rem;
+        height: 3.04rem;
+        line-height: 3.04rem;
         padding: 3px 1px 2px 3px;
     }
     
     .learn-more-button{
-        font-size: 1.1rem;
+        font-size: 1.76rem;
     }
 
 
@@ -667,21 +681,22 @@ input, textarea {
     .article h4,
     .article-header h2,
     .contact h2{
-        font-size: 1.3em
+        font-size: 2.7rem
     }
 
     .header-text h1{
-        font-size: 2em;
-    }
-    .header-text h2{
-        font-size: 1.1em;
+        font-size: 3.2rem;
     }
 
-    .wedges,
-    .articles,
-    .contact-form,
+    .header-text h2{
+        font-size: 1.76rem;
+    }
+
+    .wedges p,
+    .articles p,
+    .contact-header p,
     .contact-list p{
-        font-size: 1.3em;
+        font-size: 1.8rem;
     }
 
 }
