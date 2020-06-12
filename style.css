@@ -73,50 +73,98 @@ html, body {
 }
 
 .divider{
-    height: 100px;
+    height: 50px;  
 }
+
 .divider1{
-    background-image: linear-gradient(
-        rgb(34, 92, 139),
-        rgb(23, 77, 121))
+    background-image: 
+    linear-gradient(to bottom right, 
+    transparent calc(50% - 1px),
+    rgb(34, 92, 139),
+    rgb(34, 92, 139) calc(50% + 1px));
+
+    position: relative;
+    z-index: 99;
+    transform: translate(0, -50px);
 }
+
 .divider2{
-    background-image: linear-gradient(
-        rgb(34, 92, 139),
-        rgb(23, 77, 121))
+    background-image: 
+    linear-gradient(to top right,
+    rgb(23, 77, 121) calc(50% - 1px),
+    rgb(34, 92, 139),
+    rgb(34, 92, 139) calc(50% + 1px))
 }
+
 .divider3{
-    background-image: linear-gradient(
-        rgb(23, 77, 121),
-        rgb(19, 70, 112))
+    background-image: 
+    linear-gradient(to bottom right, 
+    rgb(23, 77, 121) calc(50% - 1px), 
+    rgb(19, 70, 112), 
+    rgb(19, 70, 112) calc(50% + 1px))
 }
+
 .divider4{
-    background-image: linear-gradient(
-        rgb(19, 70, 112),
-        rgb(19, 62, 97))
+    background-image: 
+    linear-gradient(to top right, 
+    rgb(19, 62, 97) calc(50% - 1px), 
+    rgb(19, 70, 112), 
+    rgb(19, 70, 112)calc(50% + 1px))
 }
+
 .divider5{
-    background-image: linear-gradient(
-        rgb(19, 62, 97),
-        rgb(23, 77, 121))
+    background-image: 
+    linear-gradient(to bottom right, 
+    rgb(19, 62, 97)calc(50% - 1px), 
+    rgb(19, 62, 97), 
+    transparent calc(50% + 1px));
+
+    position: relative;
+    z-index: 99;
+    transform: translate(0, 50px);
 }
 
 /*Global Styles End*/
 
 
 /* Navbar Starts */
+
 .navbar{
+    display: flex;
     background-color: rgba(43, 139, 218, 0.176);
     position: fixed;
+    width: 100%;
+    padding: 0rem 1.6rem;
 }
 
+.navbar .logo{
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.menu-btn{
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: white;
+    padding: 0rem 2rem;
+
+    justify-content: flex-end;
+}
+
+.fa-bars{
+    justify-self: flex-end;
+}
 .links{
-    display: flex;
+    display: none;
     justify-items: flex-end;
-    align-self: center;
     list-style: none; 
-    padding: 0px;
-    margin: 0px;
+
+    font-size: 1.3rem;
 }
 
 .links li{
@@ -129,6 +177,10 @@ html, body {
 
 /* Header Starts */
 
+.fa-tint{
+    font-size: 3rem !important;
+}
+
 .tint-border{
     width: 52px;
     height:52px;
@@ -137,6 +189,7 @@ html, body {
     text-align: center;
     line-height: 52px;
     padding: 9px;
+    margin-bottom: 4rem;
     vertical-align: middle;
 }
 
@@ -252,7 +305,7 @@ html, body {
 
 .article{
     min-height: 500px;
-    height: auto; 
+    height: fit-content; 
     margin: 3.2rem 2.4rem;
     border-radius: 5px;
     background-color: rgb(25, 79, 122);
@@ -315,7 +368,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    padding: 2.4em 2.4rem 0rem 2.4rem;
+    padding: 5.4rem 2.4rem 0rem 2.4rem;
 }
 
 .contact-header{
@@ -343,6 +396,10 @@ input, textarea {
     background-color:  rgba(13, 41, 63, 0.952);
     font-family: 'Raleway', Helvetica, sans-serif;
     color: white;
+    font-size: 1.6rem;
+}
+label {
+    font-size: 1.6rem;
 }
 
 .message-button{
@@ -404,6 +461,8 @@ input, textarea {
     justify-content: center;
     align-items: flex-start;
     text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
     color: gray;
     padding: 6.4rem 0rem 3.2rem 0rem;
     border-top: 2px solid gray;
@@ -422,7 +481,7 @@ input, textarea {
   }
 /* Footer Ends */
 
-/* 
+
 /* Media Queries */
 
 @media (min-width: 481px){
@@ -517,12 +576,16 @@ input, textarea {
         height: 660px;
         font-size: 2.4rem;
     }
-    
+
+    .fa-tint{
+        font-size: 6.5rem !important;
+    }
+
     .tint-border{
-        width: 60px;
-        height:60px;
-        line-height: 60px;
-        padding: 5.5px;
+        width: 90px;
+        height:90px;
+        line-height: 90px;
+        padding: 11px;
     }
 
 /* Header Ends */
@@ -631,7 +694,7 @@ input, textarea {
     }
     
     .contact ul{
-        padding-left: 40px;
+        padding-left: 6rem;
     }
     
      .form-element,
