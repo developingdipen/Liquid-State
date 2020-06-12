@@ -16,7 +16,7 @@ html, body {
 }
 :root {
     font-family: 'Raleway', Helvetica, sans-serif;
-    line-height: 2.4rem;
+    /* line-height: 2.4rem; */
     letter-spacing: 1px;
 }
 
@@ -57,12 +57,13 @@ html, body {
 }
 
 .learn-more-button{
-    margin: 20px 0px;
+    margin: 30px 0px;
     background-color: transparent;
     border: none;
     color: white;
     font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     font-weight: bolder;
     text-transform: uppercase;
     cursor: pointer;
@@ -85,7 +86,7 @@ html, body {
 
     position: relative;
     z-index: 99;
-    transform: translate(0, -50px);
+    transform: translate(0, 0px);
 }
 
 .divider2{
@@ -134,7 +135,7 @@ html, body {
     background-color: rgba(43, 139, 218, 0.176);
     position: fixed;
     width: 100%;
-    padding: 0rem 1.6rem;
+    padding: 1rem 1.6rem;
 }
 
 .navbar .logo{
@@ -147,18 +148,22 @@ html, body {
 }
 
 .menu-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
     background-color: transparent;
-    border: 2px solid gray;
+    border: none;
     border-radius: 5px;
     color: white;
     padding: 0rem 2rem;
-
-    justify-content: flex-end;
+   
 }
 
-.fa-bars{
-    justify-self: flex-end;
-}
+/* .fa-bars{
+} */
+
 .links{
     display: none;
     justify-items: flex-end;
@@ -253,7 +258,7 @@ html, body {
 }
 
 .wedge-content{
-    padding: 3.2rem 2.4rem;
+    padding: 3.2rem 2.4rem 0rem 2.4rem;
 }
 
 .wedge-image{
@@ -264,12 +269,19 @@ html, body {
 }
 
 .wedges h4{
-   text-transform: uppercase;
-   font-weight: bolder;
-   border-bottom: 2px solid gray;
-   padding-bottom: 1.6rem;
-   margin-bottom: 1.6em;    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-bottom: 2px solid gray;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6em;    
 }
+
+.wedges p{
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
 .wedges i{
     text-transform: uppercase;
     font-weight: bolder;
@@ -285,7 +297,7 @@ html, body {
 }
 
 .article-header{
-    padding: 3.2rem 2.4rem;
+    padding: 3.2rem 2.4rem 0rem 2.4rem;
 }
 
 .article-header h2{
@@ -293,18 +305,17 @@ html, body {
     border-bottom: 2px solid gray;
     padding-bottom: 1.6rem;
     margin-bottom: 1.6rem;
-    font-size: 1.44rem;
-    font-weight: lighter;
+    font-size: 1.5rem;
+    font-weight: bolder;
     letter-spacing: 1px;
 }
 
 .article-header p{
-    line-height: 20px;
-    font-size: 1.28rem;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
 }
 
 .article{
-    min-height: 500px;
     height: fit-content; 
     margin: 3.2rem 2.4rem;
     border-radius: 5px;
@@ -320,7 +331,7 @@ html, body {
 
 .article-text{
     padding: 3% 10%;
-    font-size: 1.28rem;
+    font-size: 1.5rem;
     line-height: 3.2rem;
 }
 
@@ -335,6 +346,8 @@ html, body {
 
 .article-text p{
     margin-top: 5px;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
 }
 .article i{
     text-transform: uppercase;
@@ -344,7 +357,8 @@ html, body {
 .more-articles-button{
     color: white;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
     background-color: rgb(25, 79, 122);
     padding: 5% 0%;
     margin: .8rem 2.4rem 2.4rem 2.4rem; 
@@ -373,13 +387,15 @@ html, body {
 
 .contact-header{
     margin-bottom: 4.8rem;  
+    font-size: 1.3rem;
+    line-height: 2.2rem;
 }
 
 .contact-header h2{
     text-transform: uppercase;
     border-bottom: 2px solid gray;
-    padding-bottom: 1.6rem;
-    margin-bottom: 1.6rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-element{
@@ -389,23 +405,26 @@ html, body {
 input, textarea {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 1.2rem 0rem 2.5rem 0rem;
     border: solid 2px gray;
     border-radius: 5px;
     box-sizing: border-box;
     background-color:  rgba(13, 41, 63, 0.952);
     font-family: 'Raleway', Helvetica, sans-serif;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
+
 label {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .message-button{
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 1.6rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: white;
     background-color: transparent;
     width: 100%;
@@ -414,6 +433,10 @@ label {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 5.6rem;
+}
+
+.contact-list{
+    padding-bottom: 2.8rem;
 }
 
 .contact-list ul{
@@ -430,15 +453,17 @@ label {
 
 .contact li{
     font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 1.44rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: lighter;
+
     list-style: none;
-    margin: 5px 0px 20px 0px;
+    margin: 5px 0px 16px 0px;
     cursor: pointer;
 }
 
 .contact-list .fa{
     font-size: 15px !important;
-    font-weight: bold;
     cursor: default;
 }
 
@@ -464,7 +489,7 @@ label {
     font-size: 1.2rem;
     line-height: 2.5rem;
     color: gray;
-    padding: 6.4rem 0rem 3.2rem 0rem;
+    padding: 3.2rem 0rem 3.2rem 0rem;
     border-top: 2px solid gray;
   }
 
@@ -518,6 +543,8 @@ label {
 
     .article {
         width: calc(50% - 4rem);
+        min-height: 500px;
+        height: auto;
     }
 
     .article1,
@@ -537,6 +564,7 @@ label {
 /* Articles End  */
     
 }
+/* Fix Responsive from here and on */
 
 @media (min-width: 769px) {
 
@@ -546,7 +574,7 @@ label {
     .contact-header,
     .contact .flex-parent,
     .footer {
-        width: 769px;
+        width: 721px;
         margin: 0 auto;
     }
     .header-text {
@@ -567,14 +595,21 @@ label {
     }
     
     .learn-more-button{
-        font-size: 1.92rem;
+        font-size: 1.5rem;
     }
 
 /* Global Ends */
 
     .header{
         height: 660px;
-        font-size: 2.4rem;
+    }
+
+    .header-text h1{
+        font-size: 3.4rem;
+    }
+
+    .header-text h2{
+        font-size: 1.6rem;
     }
 
     .fa-tint{
@@ -590,20 +625,19 @@ label {
 
 /* Header Ends */
 
-    .wedge-text h4{
-        font-size: 2.4rem;
-    }
     .article-header{
         padding: 0px;
     }
 
+    .wedge-text h4,
     .article h4,
     .article-header h2,
     .contact h2{
-        font-size: 2.4rem
+        font-size: 2rem;
     }
     .article {
         width: calc(50% - 1.6rem);
+        height: auto;
     }
 
     .article1,
