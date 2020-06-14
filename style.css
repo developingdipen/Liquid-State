@@ -9,6 +9,7 @@ html, body {
  scroll-behavior: smooth;
  color: white;
  font-size: 62.5%;
+ background-color: rgb(19, 62, 97);
 }
 * {
     margin:0;
@@ -77,18 +78,6 @@ html, body {
     height: 50px;  
 }
 
-.divider1{
-    background-image: 
-    linear-gradient(to bottom right, 
-    transparent calc(50% - 1px),
-    rgb(34, 92, 139),
-    rgb(34, 92, 139) calc(50% + 1px));
-
-    position: relative;
-    z-index: 99;
-    transform: translate(0, 0px);
-}
-
 .divider2{
     background-image: 
     linear-gradient(to top right,
@@ -123,8 +112,80 @@ html, body {
     position: relative;
     z-index: 99;
     transform: translate(0, 50px);
+
 }
 
+/* The following code is in respect to the Waves section used as the Divider 1 between the Header and the First Content Wedge. */
+
+.editorial {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin: 0; 
+    float:left;
+    transform: translate(0px, -60px);
+}
+  
+  .parallax1 > use {
+    animation: move-forever1 10s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax2 > use {
+        animation: move-forever2 8s linear infinite;
+        &:nth-child(1) {
+        animation-delay: -2s;
+        }
+    }
+  .parallax3 > use {
+        animation: move-forever3 6s linear infinite;
+        &:nth-child(1) {
+        animation-delay: -2s;
+        }
+    }
+  .parallax4 > use {
+    animation: move-forever4 4s linear infinite;
+        &:nth-child(1) {
+        animation-delay: -2s;
+        }
+    }
+
+  @keyframes move-forever1 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+
+  @keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  @keyframes move-forever3 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever4 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+/* Waves End */
 /*Global Styles End*/
 
 
@@ -139,7 +200,7 @@ html, body {
 }
 
 .navbar .logo{
-    justify-content: flex-end;
+    justify-content: flex-start;
     text-decoration: none;
     list-style: none;
     color: white;
@@ -147,22 +208,22 @@ html, body {
     white-space: nowrap;
 }
 
-.menu-btn{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
+.menu-btn{    
+
     background-color: transparent;
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 0rem 2rem;
+    padding: 0rem .5rem;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
    
 }
 
-/* .fa-bars{
-} */
+.fa-bars{
+    margin-left: .5rem;
+}
 
 .links{
     display: none;
@@ -203,7 +264,7 @@ html, body {
         rgba(42, 139, 218, 0.795),
         rgb(13, 41, 63)), url(https://images.pexels.com/photos/2031773/pexels-photo-2031773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-attachment: fixed;
-    background-position: center top 10%;
+    background-position: center top ;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -361,7 +422,7 @@ html, body {
     font-size: 1.5rem;
     background-color: rgb(25, 79, 122);
     padding: 5% 0%;
-    margin: .8rem 2.4rem 2.4rem 2.4rem; 
+    margin: .8rem 2.4rem 0rem 2.4rem; 
     width: calc(100% - 4.8rem);
     border: 2px solid gray;
     border-radius: .48rem;
@@ -382,7 +443,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    padding: 5.4rem 2.4rem 0rem 2.4rem;
+    padding: 9.4rem 2.4rem 0rem 2.4rem;
 }
 
 .contact-header{
@@ -799,72 +860,3 @@ label {
 }
 
 
-
-.editorial {
-    display: block;
-    width: 100%;
-    height: 60px;
-    max-height: 60px;
-    margin: 0; 
-    float:left;
-    transform: translate(0px, -60px);
-}
-  
-  .parallax1 > use {
-    animation: move-forever1 10s linear infinite;
-    &:nth-child(1) {
-      animation-delay: -2s;
-    }
-  }
-  .parallax2 > use {
-        animation: move-forever2 8s linear infinite;
-        &:nth-child(1) {
-        animation-delay: -2s;
-        }
-    }
-  .parallax3 > use {
-        animation: move-forever3 6s linear infinite;
-        &:nth-child(1) {
-        animation-delay: -2s;
-        }
-    }
-  .parallax4 > use {
-    animation: move-forever4 4s linear infinite;
-        &:nth-child(1) {
-        animation-delay: -2s;
-        }
-    }
-
-  @keyframes move-forever1 {
-    0% {
-      transform: translate(85px, 0%);
-    }
-    100% {
-      transform: translate(-90px, 0%);
-    }
-  }
-
-  @keyframes move-forever2 {
-    0% {
-      transform: translate(-90px, 0%);
-    }
-    100% {
-      transform: translate(85px, 0%);
-    }
-  }
-  @keyframes move-forever3 {
-    0% {
-      transform: translate(85px, 0%);
-    }
-    100% {
-      transform: translate(-90px, 0%);
-    }
-  }
-  @keyframes move-forever4 {
-    0% {
-      transform: translate(-90px, 0%);
-    }
-    100% {
-      transform: translate(85px, 0%);
-    }
-  }
