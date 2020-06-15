@@ -127,30 +127,25 @@ html, body {
     transform: translate(0px, -60px);
 }
   
-  .parallax1 > use {
+.parallax1 > use {
     animation: move-forever1 10s linear infinite;
-    &:nth-child(1) {
-      animation-delay: -2s;
-    }
-  }
-  .parallax2 > use {
-        animation: move-forever2 8s linear infinite;
-        &:nth-child(1) {
-        animation-delay: -2s;
-        }
-    }
-  .parallax3 > use {
-        animation: move-forever3 6s linear infinite;
-        &:nth-child(1) {
-        animation-delay: -2s;
-        }
-    }
-  .parallax4 > use {
+    animation-delay: -2s;
+} 
+
+.parallax2 > use {
+    animation: move-forever2 8s linear infinite;
+    animation-delay: -2s;
+}
+
+.parallax3 > use {
+    animation: move-forever3 6s linear infinite;
+    animation-delay: -2s;
+}
+
+.parallax4 > use {
     animation: move-forever4 4s linear infinite;
-        &:nth-child(1) {
-        animation-delay: -2s;
-        }
-    }
+    animation-delay: -2s;
+}
 
   @keyframes move-forever1 {
     0% {
@@ -195,11 +190,12 @@ html, body {
     display: flex;
     background-color: rgba(43, 139, 218, 0.176);
     position: fixed;
+    z-index: 99;
     width: 100%;
     padding: 1rem 1.6rem;
 }
 
-.navbar .logo{
+.logo{
     justify-content: flex-start;
     text-decoration: none;
     list-style: none;
@@ -218,25 +214,20 @@ html, body {
     margin-right: 0;
     margin-left: auto;
     cursor: pointer;
-   
 }
 
-.fa-bars{
-    margin-left: .5rem;
-}
-
-.links{
+.overlay{
     display: none;
-    justify-items: flex-end;
-    list-style: none; 
+    height: 350px;
+    width: 280px;
 
     font-size: 1.3rem;
 }
 
-.links li{
+.links a{
     color: white;
+    text-decoration: none;
 }
-
 
 /* Navbar Ends  */
 
@@ -570,7 +561,7 @@ label {
 
 /* Media Queries */
 
-@media (min-width: 481px){
+@media (min-width: 480px){
 
     .wedges .flex-parent{
         display: flex;
@@ -627,7 +618,7 @@ label {
 }
 /* Fix Responsive from here and on */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     .wedge-content,
     .article-header,
@@ -660,6 +651,16 @@ label {
     }
 
 /* Global Ends */
+
+.logo{
+    font-size: 1.6rem;
+}
+
+.fa-bars{
+    font-size: 1.6rem !important;
+}
+
+/* Navbar Ends */
 
     .header{
         height: 660px;
@@ -748,11 +749,48 @@ label {
     
 /* Global Ends */
 
+    .logo{
+        font-size: 2rem;
+    }
+
+    .fa-bars{
+        font-size: 2rem !important;
+    }
+
+/* Navbar Ends */
+
+    .header{
+        height: 770px;
+    }
+
+    .header-text h1{
+        font-size: 4.4rem;
+    }
+
+    .header-text h2{
+        font-size: 2.6rem;
+    }
+
+    .fa-tint{
+        font-size: 6.5rem !important;
+    }
+
+    .tint-border{
+        width: 90px;
+        height:90px;
+        line-height: 90px;
+        padding: 11px;
+    }
+
+    /* Header Ends */
+
     .wedge-image{
         width: 325px;
         height: 325px;
         border-radius: 50%;
     }
+
+/* Wedges End */
 
     .article {
         width: calc(50% - 3.2rem);
@@ -839,15 +877,7 @@ label {
     .article h4,
     .article-header h2,
     .contact h2{
-        font-size: 2.7rem
-    }
-
-    .header-text h1{
-        font-size: 3.2rem;
-    }
-
-    .header-text h2{
-        font-size: 1.76rem;
+        font-size: 2.5rem
     }
 
     .wedges p,
@@ -858,5 +888,3 @@ label {
     }
 
 }
-
-
