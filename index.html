@@ -20,16 +20,17 @@
         <a onclick="openNav()"class="fa fa-bars menu-btn"></a>
     </nav>
 
-    <div class="overlay">
-        <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Generic</a></li>
-            <li><a href="#">Elements</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
-        </ul>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <ul class="links">
+                <li><a onclick="closeNav()" href="index.html">Home</a></li>
+                <li><a onclick="closeNav()" href="#about">About</a></li>
+                <li><a onclick="closeNav()" href="#articles">Articles</a></li>
+                <li><a onclick="closeNav()" href="#contact">Contact</a></li>
+            </ul>
 
-        <a onclick="closeNav()"class="fa fa-times"></a>
+            <a onclick="closeNav()"class="fa fa-times"></a>
+        </div>
     </div>
       
 
@@ -84,7 +85,7 @@
         </svg>
     </div>
 
-    <section>
+    <section class="about" id="about">
         <div class="wedges wedge1">
             <div class="wedge-content flex-parent">
                 <img src="https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="wedge-image flex-child">
@@ -131,7 +132,7 @@
 
     <div class="divider divider4" id="divder"></div>
 
-    <section class="articles">
+    <section class="articles" id="articles">
 
         <div class="article-header">
             <h2>Vitae Phaselleus</h2>
@@ -231,16 +232,16 @@
                     <li><a href="#" class=" fa fa-instagram contact-fa-border"></a>instagram.com/untitled-tld</li>
                 </ul>
             </div>
-            <section class="footer">
-                <footer>
-                    <p>&copy; 2020 All Rights Reserved.</p>
-                    <p>Made with
-                        <i class="fa fa-coffee"></i>
-                        <i class="fa fa-heart-o"></i> 
-                        <i class="fa fa-magic"></i>  
-                        by<a href="https://developingdipen.com/" target="_blank" rel="noreferrer" aria-label="Website Developer's Link"> Developing Dipen</a></p>
-                </footer>
-            </section>
+
+            <footer class="footer">
+                <p>&copy; 2020 All Rights Reserved.</p>
+                <p>Made with
+                    <i class="fa fa-coffee"></i>
+                    <i class="fa fa-heart-o"></i> 
+                    <i class="fa fa-magic"></i>  
+                    by<a href="https://developingdipen.com/" target="_blank" rel="noreferrer" aria-label="Website Developer's Link"> Developing Dipen</a></p>
+            </footer>
+
         </div>
     </section>
 
