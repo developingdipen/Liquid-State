@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("overlay").style.display = "inline-block";
   }
   
   function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("overlay").style.display = "none";
   }
 
 
@@ -17,3 +17,4 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
