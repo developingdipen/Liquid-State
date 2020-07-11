@@ -1,0 +1,14 @@
+{
+    "name": "Liquid State",
+    "short_name": "Liquid State",
+    "start_url": "https://developingdipen.github.io/Liquid-State/",
+    "display": "standalone",
+    "background_color": "#133e61",
+    "theme_color": "#2b8bda",
+    "description": "Another Free Responsive Site Template",
+    "icons": [{
+      "src": "Liquid-State-Favicon.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }]
+  }
